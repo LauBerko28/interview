@@ -5,15 +5,16 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions (
-        plugin = {"html:target/html-reports/cucumber-report.html",
-                "json:target/json-reports/json-report.json"},
-        features = "@target/rerun.txt",
-        glue = "io/xyz/layers/common/steps_defs",
-        monochrome = true,
-        publish = false
+@CucumberOptions(
+        plugin = {
+                "pretty",
+                "html:target/html-reports/failed-report.html",      // HTML report for failed tests
+                "json:target/json-reports/failed-report.json"       // JSON report for failed tests
+        },
+        features = "@target/rerun.txt",   // Rerun the failed scenarios from the rerun.txt file
+        glue = "io/xyz/layers/common/steps_defs",   // Same step definitions as CukesRunner
+        monochrome = true,              // Better readability
+        publish = false                 // Don't publish report online
 )
-
 public class FailedRunner {
-
 }
