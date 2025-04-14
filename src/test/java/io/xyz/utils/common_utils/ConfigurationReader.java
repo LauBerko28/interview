@@ -1,5 +1,5 @@
 package io.xyz.utils.common_utils;
-
+// allows to pass/read information passed on the configuration.properties file
 import java.io.FileInputStream;
 import java.util.Properties;
 

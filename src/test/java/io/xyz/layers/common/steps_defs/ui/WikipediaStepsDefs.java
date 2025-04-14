@@ -1,5 +1,8 @@
 package io.xyz.layers.common.steps_defs.ui;
 
+//UI related steps are stored here based on the feature they belong to
+
+
 import io.cucumber.java.en.*;
 import io.xyz.pages.ui.WikipediaPage;
 import io.xyz.utils.common_utils.ConfigurationReader;

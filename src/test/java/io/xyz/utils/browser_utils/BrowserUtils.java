@@ -1,4 +1,5 @@
 package io.xyz.utils.browser_utils;
+// common custom methods related to the Browser interaction. such as waiting time...
 
 import io.cucumber.java.Scenario;
 import io.xyz.utils.common_utils.ConfigurationReader;

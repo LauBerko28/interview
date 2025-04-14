@@ -1,0 +1,3 @@
+-- all the DB queries will be stored and run within this file
+-- BUT can also be run directly on the DB server such as DBeaver or MySQL directly
+-- Eg: SELECT * FROM FRIENDS WHERE AGE = 30;

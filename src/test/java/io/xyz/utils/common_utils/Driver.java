@@ -1,4 +1,5 @@
 package io.xyz.utils.common_utils;
+// Instantiation of the driver and common methods of the same such as killing the driver instance once the run is finished
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

@@ -1,5 +1,7 @@
 package io.xyz.layers.common;
 
+// This class is used to set up the actions that will happen before and after each scenario execution
+
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
