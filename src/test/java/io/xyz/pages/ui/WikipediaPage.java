@@ -1,4 +1,5 @@
 package io.xyz.pages.ui;
+// Here will be storing all the elements/locators for readability and maintainability of the UI
 
 import io.xyz.utils.common_utils.Driver;
 import org.openqa.selenium.WebElement;
