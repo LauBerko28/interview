@@ -21,13 +21,13 @@ public class Environment {
         //String environment = ConfigurationReader.get("environment");
 
         try {
-
+            // the following try/catch block is used to load configuration settings from .properties files. After these operations, the "properties" object will contain all the key-value pairs defined in the file, which can then be accessed using methods like getProperty(String key).
             String path = System.getProperty("user.dir" ) + "/src/test/resources/env/" + environment + ".properties";
 
-            FileInputStream input = new FileInputStream(path);
-            properties = new Properties();
-            properties.load(input);
-            input.close();
+            FileInputStream input = new FileInputStream(path); // Creates a new FileInputStream that reads bytes from a file located at the specified path
+            properties = new Properties(); // Instantiates a new Properties object, which is essentially a specialized HashMap designed to store configuration values as key-value pairs
+            properties.load(input); // Reads the file content from the input stream and loads it into the Properties object
+            input.close(); // Closes the file input stream to release system resources and avoid memory leaks
         } catch (IOException e) {
             e.printStackTrace();
         }
